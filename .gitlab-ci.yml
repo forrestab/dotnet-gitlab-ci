@@ -1,0 +1,24 @@
+image: microsoft/dotnet:latest
+
+stages:
+  - build
+  - test
+
+before_script:
+  - 'dotnet restore'
+
+build:
+  stage: build
+  script:
+    - 'cd NewTypes\src\NewTypes'
+    - 'dotnet build'
+  only:
+    - master
+
+test:
+  stage: test
+  script:
+    - 'cd NewTypes\test\NewTypes.Tests'
+    - 'dotnet test'
+  only:
+    - master
