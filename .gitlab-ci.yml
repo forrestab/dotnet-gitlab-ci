@@ -10,7 +10,7 @@ before_script:
 build:
   stage: build
   script:
-    - 'cd NewTypes\src\NewTypes'
+    - 'cd NewTypes/src/NewTypes'
     - 'dotnet build'
   only:
     - master
@@ -18,7 +18,7 @@ build:
 test:
   stage: test
   script:
-    - 'cd NewTypes\test\NewTypes.Tests'
+    - 'cd NewTypes/test/NewTypes.Tests'
     - 'dotnet test'
   only:
     - master
