@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{ADACD08B-1485-4609-A59A-C8BDAD9A1E92}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{E3C8E138-429E-4EDE-996F-CCA2F0E8050C}"
+	ProjectSection(SolutionItems) = preProject
+		global.json = global.json
+	EndProjectSection
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "NewTypes", "src\NewTypes\NewTypes.xproj", "{DC079B7C-9221-4F9A-BEBD-80E11E8CBD87}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{2450C54E-85F0-480F-BC8A-862EC0DF528E}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "NewTypes.Tests", "test\NewTypes.Tests\NewTypes.Tests.xproj", "{846C62FF-AD3F-44F2-B0AF-8DB68433D9DE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DC079B7C-9221-4F9A-BEBD-80E11E8CBD87}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC079B7C-9221-4F9A-BEBD-80E11E8CBD87}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC079B7C-9221-4F9A-BEBD-80E11E8CBD87}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC079B7C-9221-4F9A-BEBD-80E11E8CBD87}.Release|Any CPU.Build.0 = Release|Any CPU
+		{846C62FF-AD3F-44F2-B0AF-8DB68433D9DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{846C62FF-AD3F-44F2-B0AF-8DB68433D9DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{846C62FF-AD3F-44F2-B0AF-8DB68433D9DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{846C62FF-AD3F-44F2-B0AF-8DB68433D9DE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{DC079B7C-9221-4F9A-BEBD-80E11E8CBD87} = {ADACD08B-1485-4609-A59A-C8BDAD9A1E92}
+		{846C62FF-AD3F-44F2-B0AF-8DB68433D9DE} = {2450C54E-85F0-480F-BC8A-862EC0DF528E}
+	EndGlobalSection
+EndGlobal
