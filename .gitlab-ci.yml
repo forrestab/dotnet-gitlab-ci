@@ -4,17 +4,24 @@ stages:
   - build
   - test
 
+variables:
+  project: "NewTypes"
+
 before_script:
   - "dotnet restore"
 
 build:
   stage: build
+  variables:
+    build_path: "$project/src/$project"
   script:
-    - "cd NewTypes/src/NewTypes"
+    - "cd $build_path"
     - "dotnet build"
 
 test:
   stage: test
+  variables:
+    test_path: "$project/test/$project.Tests"
   script:
-    - "cd NewTypes/test/NewTypes.Tests"
+    - "cd $test_path"
     - "dotnet test"
