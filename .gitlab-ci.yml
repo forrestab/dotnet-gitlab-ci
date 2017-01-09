@@ -5,16 +5,16 @@ stages:
   - test
 
 before_script:
-  - 'dotnet restore'
+  - "dotnet restore"
 
 build:
   stage: build
   script:
-    - 'cd NewTypes/src/NewTypes'
-    - 'dotnet build'
+    - "cd NewTypes/src/NewTypes"
+    - "dotnet build"
 
 test:
   stage: test
   script:
-    - 'cd NewTypes/test/NewTypes.Tests'
-    - 'dotnet test'
+    - "cd NewTypes/test/NewTypes.Tests"
+    - "dotnet test"
